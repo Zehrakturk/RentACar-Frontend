@@ -1,4 +1,17 @@
-<div class="btn-group dropend">
+<table class="table">
+  <thead>
+    <tr><h4>Brand table</h4></tr>
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+      </tr>
+  </thead>
+  <tr *ngFor="let brand of brands">
+      <td>{{brand.brandId}}</td>
+      <td>{{brand.brandName}}</td>
+      
+  </tr>
+</table><!-- <div class="btn-group dropend">
     <button type="button" class="btn btn-secondary">
       Brand
     </button>
@@ -6,6 +19,5 @@
       <span class="visually-hidden">Toggle Dropend</span>
     </button>
     <ul class="dropdown-menu">
-      <!-- Dropdown menu links -->
     </ul>
-  </div>
+  </div> -->

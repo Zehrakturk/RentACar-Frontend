@@ -1,11 +1,14 @@
-<div class="btn-group dropend">
-    <button type="button" class="btn btn-secondary">
-      Color
-    </button>
-    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
-      <span class="visually-hidden">Toggle Dropend</span>
-    </button>
-    <ul class="dropdown-menu">
-      <!-- Dropdown menu links -->
-    </ul>
-  </div>
+<table class="table">
+  <thead>
+    <tr><h4>Color Table</h4></tr>
+      <tr>
+          <th>Id</th>
+          <th>Name</th>
+      </tr>
+  </thead>
+  <tr *ngFor="let color of colors">
+      <td>{{color.colorId}}</td>
+      <td>{{color.colorName}}</td>
+      
+  </tr>
+</table>
