@@ -9,7 +9,7 @@ import { Observable } from 'rxjs';
 })
 export class CarDetailService implements OnInit{
 
-  apiUrl = 'https://localhost:7233/api/cars/';
+  apiUrl = 'https://localhost:44369/api/cars/';
   constructor(private httpClient: HttpClient) {}
 
   ngOnInit(): void {

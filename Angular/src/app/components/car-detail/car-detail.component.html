@@ -1,1 +1,21 @@
-<p>car-detail works!</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Color Name</th>
+            <th>Brand Name</th>
+            <th>Daily Price</th>
+            <th>Description</th>
+            <th>Model Year</th>
+        </tr>
+    </thead>
+    <tr *ngFor="let car of carDetails">
+        <td>{{car.carId}}</td>
+        <td>{{car.colorName}}</td>
+        <td>{{car.brandName}}</td>
+        <td>{{car.dailyPrice}}</td>
+        <td>{{car.carDescription}}</td>
+        <td>{{car.modelYear}}</td>
+    </tr>
+    
